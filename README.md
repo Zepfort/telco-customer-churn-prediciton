@@ -22,3 +22,40 @@ Model dibangun dengan preprocessing → resampling  → klasifikasi → dievalua
 
 ---
 
+## Struktur Proyek
+
+```text
+telco-customer-churn-classification/
+├── data/
+│   └── data_telco_customer_churn.csv      
+├── models/
+│   ├── churn_prediction_model.joblib   
+│   └── churn_prediction_model.pkl          
+├── notebooks/
+│   ├── ml_classification_telco_customer_churn.ipynb   
+│   └── pipeline.ipynb                      
+├── README.md                               
+└── requirements.txt
+```
+
+---
+
+## Menjalankan Proyek
+
+**1. Clone Repository**
+
+```text
+git clone https://github.com/Zepfort/telco-customer-churn-classification.git
+cd telco-customer-churn-classification
+```
+
+**2.pip install -r requirements.txt**
+
+```text
+pip install -r requirements.txt
+```
+
+**3.Jalankan Notebook**
+```text
+notebooks/ml_telco_customer_churn_classification
+```
