@@ -18,7 +18,31 @@ Perusahaan telekomunikasi sering menghadapi masalah customer churn (pelanggan be
 - Mengurangi biaya akuisisi pelanggan baru  
 - Meningkatkan loyalitas dan profitabilitas  
 
-Model dibangun dengan preprocessing → resampling  → klasifikasi → dievaluasi.
+**Problem Statement**
+
+- Faktor apa saja yang berkontribusi pada churn pelanggan?
+- Bagaimana cara membuat model yang dapat memprediksi apakah seorang pelanggan akan churn?
+- Metode resampling apa yang memberikan performa terbaik untuk data yang tidak seimbang?
+
+**Goals**
+- Melakukan eksplorasi data untuk memahami distribusi fitur dan target.
+- Menangani data tidak seimbang menggunakan beberapa metode resampling.
+- Membandingkan beberapa model klasifikasi untuk memilih kandidat terbaik.
+- Mengevaluasi model berdasarkan metrik Recall (kelas 1) karena kesalahan memprediksi pelanggan churn lebih berbahaya dibanding sebaliknya.
+
+**Analytics Approach**
+- Data cleaning
+- Exploratory Data Analysis (EDA)
+- Feature preprocessing
+- Baseline modeling (tanpa resampling)
+- Resampling (ADASYN, SMOTE, Random Oversampling)
+- Modeling ulang & evaluasi
+
+**Evaluation Metric**
+- Recall kelas 1 (Churn)
+- F1-Score
+- Confusion matrix
+- Akurasi sebagai tambahan
 
 ---
 
@@ -37,6 +61,24 @@ telco-customer-churn-classification/
 ├── README.md                               
 └── requirements.txt
 ```
+
+---
+ 
+## Dataset
+Dataset yang digunakan adalah data_telco_customer_churn.csv .Dataset memuat informasi historis pelanggan layanan telekomunikasi. 
+
+**Fitur-fitur utama**
+1.  Dependents : tanggungan (misalnya anak atau orang tua) atau tidak (Yes/No)
+2.  tenure : durasi waktu (dalam bulan) pelanggan telah berlangganan
+3.  OnlineSecurity : Layanan keamanan online tambahan (Yes, No, atau No internet service)
+4.  OnlineBackup : Layanan pencadangan data online (Yes, No, atau No internet service)
+5.  InternetService : Jenis layanan internet yang digunakan pelanggan (DSL, Fiber optic, atau No) 
+6.  DeviceProtection : Layanan perlindungan perangkat (Yes, No, atau No internet service)
+7.  TechSupport : Layanan dukungan teknis tambahan (Yes, No, atau No internet service)
+8.  Contract : Jenis kontrak berlangganan pelanggan (Month-to-month, One year, atau Two year) 
+9.  PaperlessBilling : Apakah pelanggan memilih tagihan tanpa kertas (elektronik) atau tidak (Yes/No)
+10. MonthlyCharges : Jumlah tagihan bulanan yang dibebankan kepada pelanggan
+11. Churn : Variabel target yang menunjukkan apakah pelanggan berhenti berlangganan (Yes) atau tetap setia (No)
 
 ---
 
