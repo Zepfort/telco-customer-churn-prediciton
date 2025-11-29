@@ -4,7 +4,7 @@
 Menggunakan:  
 - Preprocessing (StandarScaller + one-hot encoding)  
 - Resampling data dengan ADASYN untuk menangani ketidakseimbangan kelas  
-- Model klasifikasi yang dipilih: Logistic Regression  
+- Model klasifikasi yang dipilih: Logistic Regression + ADASYN
 
 
 ---
@@ -18,7 +18,7 @@ Perusahaan telekomunikasi sering menghadapi masalah customer churn (pelanggan be
 - Mengurangi biaya akuisisi pelanggan baru  
 - Meningkatkan loyalitas dan profitabilitas  
 
-Model dibangun dengan preprocessing → resampling  → klasifikasi, dan dievaluasi.
+Model dibangun dengan preprocessing → resampling  → klasifikasi → dievaluasi.
 
 ---
 
